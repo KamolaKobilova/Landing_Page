@@ -1,0 +1,98 @@
+.projectsSection {
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .projectsTitle {
+    font-size: 2.5rem; /* Adjust font size as necessary */
+  font-weight: 700; /* Bold text */
+  text-align: center; /* Center align the text */
+  color: #2a2a7b; /* Darker navy blue color */
+  margin-bottom: 1rem; /* Add space below the title */
+  }
+  
+  .projectsSubtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+  }
+  
+  .projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Ensures 3 cards per row */
+    gap: 2.5rem; /* Ensures uniform spacing between cards */
+    justify-content: center; /* Center the entire grid */
+  }
+  
+  .projectCard {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 340px; /* Ensures the cards don't stretch too much */
+    margin: 0 auto; /* Center each card within its column */
+  }
+  
+  .projectCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .projectImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .projectContent {
+    padding: 1.5rem;
+  }
+  
+  .projectTitle {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .projectDescription {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.8rem;
+  }
+  
+  .projectTechStack {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 1.2rem;
+  }
+  
+  .projectLinks {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .projectLink {
+    font-size: 0.85rem;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .projectLink:hover {
+    color: #0056b3;
+  }
+  
+  @media (max-width: 1024px) {
+    .projectsGrid {
+      grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projectsGrid {
+      grid-template-columns: repeat(1, minmax(0, 1fr)); /* 1 card per row on small screens */
+    }
+  }
+  

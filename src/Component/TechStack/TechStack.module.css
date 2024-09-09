@@ -1,22 +1,55 @@
-.techStackWrapper {
-    padding: 4rem 2rem;
-    text-align: center;
+.techStackSection {
+  margin-top: 80px;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.techStackTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.techStackSubtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.iconsGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  margin-top: 100px;
+}
+
+.techImage {
+  width: 70px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.techImage:hover {
+  transform: scale(1.1);
+}
+.techStackTitle {
+  font-size: 2.5rem; /* Adjust font size as necessary */
+  font-weight: 700; /* Bold text */
+  text-align: center; /* Center align the text */
+  color: #2a2a7b; /* Darker navy blue color */
+  margin-bottom: 1rem; /* Add space below the title */
+}
+
+@media (max-width: 768px) {
+  .iconsGrid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
   }
-  
-  .techStackWrapper h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+}
+
+@media (max-width: 480px) {
+  .iconsGrid {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  .icons {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-  
-  .icons svg {
-    font-size: 4rem;
-    color: #333;
-  }
-  
+}

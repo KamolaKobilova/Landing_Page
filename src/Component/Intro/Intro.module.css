@@ -1,31 +1,22 @@
 .introWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4rem 2rem;
+  display: flex;
+  justify-content: center; /* Center the image */
+  align-items: center;
+  margin-top: 80px;
+  padding: 4rem 2rem;
+}
+
+.introImage {
+  width: 100%;  /* Adjust this based on how large you want the image */
+  max-width: 1200px;  /* Set a max width to avoid making it too large */
+}
+
+@media (max-width: 768px) {
+  .introWrapper {
+    padding: 2rem 1rem;
   }
-  
-  .textContent h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1rem;
+
+  .introImage {
+    width: 100%; /* Ensure it scales well on smaller screens */
   }
-  
-  .textContent h2 {
-    font-size: 2rem;
-    color: #623ce1;
-    margin-bottom: 1rem;
-  }
-  
-  .textContent p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  .profileImage img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid #623ce1;
-  }
-  
+}

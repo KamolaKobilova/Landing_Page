@@ -4,22 +4,30 @@ import styles from "./Header.module.css";
 
 const Header: React.FC = () => {
   return (
-    <header className={styles.headerWrapper}>
-      <h1 className={styles.logo}>{"{007} pavanng"}</h1>
+    <header className={styles.header}>
+      <div className={styles.logo}>
+        <span className={styles.logoText}>{"{007}"}</span>
+        <span className={styles.logoSubtext}>pavanmg</span>
+      </div>
       <nav className={styles.nav}>
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#techstack">Tech Stack</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
       <div className={styles.socialIcons}>
-        <a href="#">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
           <FaGithub />
         </a>
-        <a href="#">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
           <FaTwitter />
         </a>
-        <a href="#">
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedin />
         </a>
       </div>
