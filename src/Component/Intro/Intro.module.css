@@ -1,0 +1,31 @@
+.introWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+  
+  .textContent h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .textContent h2 {
+    font-size: 2rem;
+    color: #623ce1;
+    margin-bottom: 1rem;
+  }
+  
+  .textContent p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .profileImage img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #623ce1;
+  }
+  

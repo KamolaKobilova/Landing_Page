@@ -1,0 +1,22 @@
+.techStackWrapper {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .techStackWrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .icons svg {
+    font-size: 4rem;
+    color: #333;
+  }
+  
